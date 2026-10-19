@@ -357,6 +357,7 @@
                     </div>
 
                     <div id="cartItemsList" class="space-y-4 max-h-[50vh] overflow-y-auto pr-1">
+                        <!-- Items dynamically generated -->
                         <p class="text-sm text-gray-500 text-center py-8">Keranjang belanjaanmu masih kosong nih!</p>
                     </div>
                 </div>
@@ -393,6 +394,7 @@
             }
             updateCartUI();
             
+            // Open cart drawer on addition
             const modal = document.getElementById('cartModal');
             if(modal.classList.contains('hidden')) {
                 toggleCart();
